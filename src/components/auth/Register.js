@@ -12,6 +12,14 @@ class Register extends Component {
     password:''
   };
 
+  componentWillMount(){
+    const {allowRegistration} = this.props.allowRegistration;
+
+    if(!allowRegistration){
+      this.props.history.push('/');
+    }
+  }
+
   onChange = e => this.setState({[e.target.name]:e.target.value});
 
   onSubmit = e => {
@@ -64,7 +72,7 @@ class Register extends Component {
 
                   <input 
                     type="submit" 
-                    value="Login" 
+                    value="Register" 
                     className="btn btn-primary btn-block"/>
                 </form>
               </div>

@@ -13,8 +13,7 @@ const firebaseConfig = {
   databaseURL: "https://reactredux-b2077.firebaseio.com",
   projectId: "reactredux-b2077",
   storageBucket: "reactredux-b2077.appspot.com",
-  messagingSenderId: "377983118570",
-  serviceAccount: "../public/reactredux-b2077-firebase-adminsdk-p2ly6-94188cf84b.json"
+  messagingSenderId: "377983118570"
 };
 
 // react-redux-firebase config
